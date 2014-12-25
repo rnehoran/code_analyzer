@@ -14,19 +14,8 @@
  **************************************************************/
 function createRules(){
 
-  // array of rules in format stated in global.js
-  ruleArray = [['function', 0, 0, false],
-                 ['if', 1, 0, false],
-                   ['if', 2, 0, false],
-                   ['else', 2, 2, false],
-               ['if', 0, 0, false],
-                 ['var', 1, 0, false],
-                 ['expression', 1, 2, false]];
-
-  blackList = [['while', 0, 1, false],
-               ['for', 0, 1, false]];
-
-  /* for each rule in array of rules:
+  /* ruleArray and blackList from global.js
+   * for each rule in arrays of rules:
    *   makes indentation based on level
    *   sets color and picture based on list
    */
