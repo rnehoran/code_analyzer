@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Code Analyzer</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css?version=4"/>
+
+    <!-- all functions divided into separate files,
+       - based on purpose and role in algorithm
+       -->
+    <script src="global.js"></script>
+    <script src="mark.js"></script>
+    <script src="get.js"></script>
+    <script src="esprima/esprima.js"></script>
+    <script src="parse.js"></script>
+    <script src="match.js"></script>
+    <script src="debug.js"></script>
+  </head>
+
+  <body onload="createRules(); testOnInterval();">
+    <table width="100%" height="100%">
+
+      <!-- page title, color changes when all rules are validated
+         -->
+      <tr>
+        <td id="td-title" colspan="2">
+          <div title="Code Analyzer" id="title">
+            Code Analyzer
+          </div>
+          <div id="by">
+            by Roy Nehoran
+          </div>
+        </td>
+      </tr>
+      <tr>
+
+        <!-- code editor, including scripts for runtime
+           -->
+        <td valign="top" id="code-editor" class="td-main">
+          <pre id="editor"></pre>
+          <script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+          <script src="editor.js"></script>
+        </td>
+
+        <!-- code rules graphics, with error box for manually detected errors
+           -->
+        <td valign="top" id="code-rules" class="td-main" rowspan="2">
+          <div id="error"></div>
+        </td>
+      </tr>
+      <tr>
+
+        <!-- debug area, any object inseted with debug() function
+           -->
+        <td id="debug"></td>
+      </tr>
+    </table>
+  </body>
+
+</html>
