@@ -13,7 +13,7 @@ body {
 /* code editor and td containing it
  */
 #code-editor {
-  padding-top: 15px;
+  padding: 15px 0px 0px 20px;
   width: 65%;
 }
 
@@ -51,7 +51,7 @@ body {
  */
 #code-rules {
   width: 35%;
-  padding-left: 20px;
+  padding: 0px 0px 0px 20px;
 }
 
 .rule {
@@ -94,6 +94,6 @@ body {
 /* error box
  */
 #error {
-  padding-bottom: 15px;
+  padding: 0px 0px 15px 0px;
   color: red;
 }
