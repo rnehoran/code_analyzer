@@ -1,6 +1,5 @@
 Code_Analyzer
 =============
-
 This project takes in code that is entered in a code editor, and compares it to hard-coded rules in the javascript.
 The main web page, code_analyzer.html, contains an Ace code editor on the left and dynamic rule graphics on the right.
 
