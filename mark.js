@@ -1,6 +1,7 @@
 /*-------------------------------------------------------------
  * file: mark.js
  * description: display and alteration of rules graphics
+ * content: createRules(), mark(), markRules(), clearMarks()
  * created by: Roy Nehoran
  -------------------------------------------------------------*/
 
@@ -182,8 +183,7 @@ function markRules(){
  ***************************************************************/
 function clearMarks(){
 
-  /* clear rules in ruleArray
-   */
+  //clear validation and marks in rules in ruleArray
   for (var v = 0; v < ruleArray.length; v++){
     if (ruleArray[v][VAL]){
       ruleArray[v][VAL] = false;
@@ -191,6 +191,7 @@ function clearMarks(){
     }
   }
 
+  // clear validation and marks in rules in blackList
   for (var v = 0; v < blackList.length; v++){
     if (blackList[v][VAL]){
       blackList[v][VAL] = false;
@@ -198,8 +199,7 @@ function clearMarks(){
     }
   }
 
-  /* clear code statements in codeArray
-   */
+  // clear code statements in codeArray
   for (var x = 0; x < codeArray.length; x++){
     codeArray[x][VAL] = false;
   }

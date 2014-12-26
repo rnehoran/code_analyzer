@@ -1,6 +1,8 @@
 /*-------------------------------------------------------------
  * file: global.js
- * description: initializes all variables globally
+ * description: initializes all global variables
+ * content: ruleArray, blackList, codeArray, NAME, LEVEL,
+ *          LIST_ORDER, VAL
  * created by: Roy Nehoran
  -------------------------------------------------------------*/
 

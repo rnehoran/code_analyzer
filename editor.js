@@ -1,6 +1,7 @@
 /*-------------------------------------------------------------
  * file: editor.js
  * description: initializes editor and its functions
+ * content: editor, selectAll and submit commands
  * created by: Roy Nehoran
  -------------------------------------------------------------*/
 
@@ -14,6 +15,7 @@ var editor = ace.edit('editor');
 editor.setTheme('ace/theme/katzenmilch');
 editor.getSession().setMode('ace/mode/javascript');
 
+// on Ctrl-A, select all text in code editor
 editor.commands.addCommand({
   name: 'selectAll',
   bindKey: {win: 'Ctrl-A',  mac: 'Command-A'},
@@ -23,6 +25,7 @@ editor.commands.addCommand({
   readOnly: true
 });
 
+// on Ctrl-Enter, validate code
 editor.commands.addCommand({
   name: 'submit',
   bindKey: {win: 'Ctrl-Enter',  mac: 'Command-Enter'},

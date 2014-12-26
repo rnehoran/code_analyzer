@@ -1,6 +1,7 @@
 /*-------------------------------------------------------------
  * file: debug.js
  * description: provides tools for debugging
+ * content: debug()
  * created by: Roy Nehoran
  -------------------------------------------------------------*/
 
@@ -16,6 +17,8 @@
  *
  ***************************************************************/
 function debug(string, erase){
+
+  // if indicated, erase current content of debug area
   if (erase){
     var element = document.getElementById('debug');
     element.innerHTML = string;

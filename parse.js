@@ -1,6 +1,7 @@
 /*-------------------------------------------------------------
  * file: parse.js
  * description: parse code and organize it into an array
+ * content: parse(), expand()
  * created by: Roy Nehoran
  -------------------------------------------------------------*/
 

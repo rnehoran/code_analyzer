@@ -2,6 +2,9 @@
  * file: match.js
  * description: compares the code and rule arrays to find
  *              matches
+ * content: testOnInterval(), clearAndTest(), testCode(),
+ *          existInCode(), checkPath(), findInCode(),
+ *          testBlackList(), validateAll()
  * created by: Roy Nehoran
  -------------------------------------------------------------*/
 
@@ -15,6 +18,13 @@
  ***************************************************************/
 function testOnInterval(){
   var tempCode = editor.getValue();
+
+  /* every second,
+   *   get current code in code editor
+   *   compare to code last second
+   *
+   * if different, validate code
+   */
   setInterval(function(){
     var currentCode = editor.getValue();
     if (currentCode != tempCode){
@@ -44,6 +54,7 @@ function clearAndTest(){
  *
  ***************************************************************/
 function testCode(){
+
   // parse entered code
   parse();
 

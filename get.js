@@ -1,6 +1,9 @@
 /*-------------------------------------------------------------
  * file: get.js
  * description: getters for all functions in project
+ * content: getParent(), getSibling(), getChild(),
+ *          getNextInLevel(), getFirstInLevel(), getName(),
+ *          getLongestPath()
  * created by: Roy Nehoran
  -------------------------------------------------------------*/
 
@@ -16,6 +19,7 @@
  *
  ***************************************************************/
 function getParent(level, index, arr){
+
   /* loops up the array until:
    *   the level of a statement equals to
    *   the level of the original,
@@ -200,6 +204,7 @@ function getName(type){
  ***************************************************************/
 function getLongestPath(){
   var longestPath = 0;
+
   // for every rule, checks if level is larger than current longestPath
   for (var x = 0; x < ruleArray.length; x++){
     if (ruleArray[x][LEVEL] > longestPath){
