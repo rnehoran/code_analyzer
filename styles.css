@@ -46,6 +46,11 @@ body {
   padding: 8px 0px 0px 0px;
 }
 
+#directions {
+  padding: 0px;
+  display: inline;
+}
+
 /* td containing rules, and
  * individual rule graphics
  */

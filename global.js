@@ -18,14 +18,14 @@
  *     -validated - starts as false
  */
 var ruleArray = [['function', 0, 0, false],
-                 ['if', 1, 0, false],
-                   ['if', 2, 0, false],
-                   ['else', 2, 2, false],
-               ['if', 0, 0, false],
-                 ['var', 1, 0, false],
-                 ['expression', 1, 2, false]];
+                   ['if', 1, 0, false],
+                     ['if', 2, 0, false],
+                     ['else', 2, 2, false],
+                 ['if', 0, 0, false],
+                   ['var', 1, 0, false],
+                   ['expression', 1, 2, false]];
 var blackList = [['while', 0, 1, false],
-               ['for', 0, 1, false]];
+                 ['for', 0, 1, false]];
 
 /* codeArray:
  *   stores array of statements from user-entered code
